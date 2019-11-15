@@ -202,6 +202,7 @@
             this.LogBtn1.TabIndex = 5;
             this.LogBtn1.Text = "View Maintenance Logs";
             this.LogBtn1.UseVisualStyleBackColor = false;
+            this.LogBtn1.Click += new System.EventHandler(this.LogBtn1_Click);
             // 
             // flightNumBtn1
             // 

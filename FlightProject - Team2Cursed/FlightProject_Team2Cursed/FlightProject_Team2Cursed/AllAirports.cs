@@ -21,6 +21,7 @@ namespace FlightProject_Team2Cursed
         public AllAirports()
         {
             InitializeComponent();
+
             AirportBox.Items.Clear();
             AirportBox.Items.Add("AIRPORTS");
             AirportBox.Items.Add("AIRPORT CODE, AIRPORT NAME");

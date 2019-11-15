@@ -59,5 +59,11 @@ namespace FlightProject_Team2Cursed
             Form form1 = new DepartAndArrival();
             form1.Show();
         }
+
+        private void LogBtn1_Click(object sender, EventArgs e)
+        {
+            Form form1 = new MaintenanceLogs();
+            form1.Show();
+        }
     }
 }
