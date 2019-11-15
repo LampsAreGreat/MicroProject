@@ -65,6 +65,7 @@
             this.BackMenu1.Name = "BackMenu1";
             this.BackMenu1.Size = new System.Drawing.Size(48, 20);
             this.BackMenu1.Text = "Back";
+            this.BackMenu1.Click += new System.EventHandler(this.BackMenu1_Click);
             // 
             // searchToolStripMenuItem
             // 
