@@ -205,8 +205,9 @@
             this.SubmitBtn.TabIndex = 23;
             this.SubmitBtn.Text = "Submit";
             this.SubmitBtn.UseVisualStyleBackColor = false;
+            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
-            // Crew
+            // DepartAndArrival
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,7 +222,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Crew";
+            this.Name = "DepartAndArrival";
             this.Text = "Crew";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

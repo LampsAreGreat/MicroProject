@@ -43,7 +43,7 @@
             this.AirplaneBtn1 = new System.Windows.Forms.Button();
             this.RoutesBtn1 = new System.Windows.Forms.Button();
             this.LogBtn1 = new System.Windows.Forms.Button();
-            this.AnDBtn1 = new System.Windows.Forms.Button();
+            this.flightNumBtn1 = new System.Windows.Forms.Button();
             this.CrewBtn1 = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -203,18 +203,19 @@
             this.LogBtn1.Text = "View Maintenance Logs";
             this.LogBtn1.UseVisualStyleBackColor = false;
             // 
-            // AnDBtn1
+            // flightNumBtn1
             // 
-            this.AnDBtn1.BackColor = System.Drawing.Color.DarkRed;
-            this.AnDBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnDBtn1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.AnDBtn1.ForeColor = System.Drawing.Color.White;
-            this.AnDBtn1.Location = new System.Drawing.Point(227, 312);
-            this.AnDBtn1.Name = "AnDBtn1";
-            this.AnDBtn1.Size = new System.Drawing.Size(242, 31);
-            this.AnDBtn1.TabIndex = 6;
-            this.AnDBtn1.Text = "Seach Arrial and Departure Cities by Flight#";
-            this.AnDBtn1.UseVisualStyleBackColor = false;
+            this.flightNumBtn1.BackColor = System.Drawing.Color.DarkRed;
+            this.flightNumBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.flightNumBtn1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
+            this.flightNumBtn1.ForeColor = System.Drawing.Color.White;
+            this.flightNumBtn1.Location = new System.Drawing.Point(227, 312);
+            this.flightNumBtn1.Name = "flightNumBtn1";
+            this.flightNumBtn1.Size = new System.Drawing.Size(242, 31);
+            this.flightNumBtn1.TabIndex = 6;
+            this.flightNumBtn1.Text = "Seach by Flight#";
+            this.flightNumBtn1.UseVisualStyleBackColor = false;
+            this.flightNumBtn1.Click += new System.EventHandler(this.flightNumBtn1_Click);
             // 
             // CrewBtn1
             // 
@@ -228,6 +229,7 @@
             this.CrewBtn1.TabIndex = 8;
             this.CrewBtn1.Text = "Search Crew by Flight#";
             this.CrewBtn1.UseVisualStyleBackColor = false;
+            this.CrewBtn1.Click += new System.EventHandler(this.CrewBtn1_Click);
             // 
             // ExitBtn
             // 
@@ -250,7 +252,7 @@
             this.ClientSize = new System.Drawing.Size(741, 533);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.CrewBtn1);
-            this.Controls.Add(this.AnDBtn1);
+            this.Controls.Add(this.flightNumBtn1);
             this.Controls.Add(this.LogBtn1);
             this.Controls.Add(this.RoutesBtn1);
             this.Controls.Add(this.AirplaneBtn1);
@@ -285,7 +287,7 @@
         private System.Windows.Forms.Button AirplaneBtn1;
         private System.Windows.Forms.Button RoutesBtn1;
         private System.Windows.Forms.Button LogBtn1;
-        private System.Windows.Forms.Button AnDBtn1;
+        private System.Windows.Forms.Button flightNumBtn1;
         private System.Windows.Forms.Button CrewBtn1;
         private System.Windows.Forms.Button ExitBtn;
     }

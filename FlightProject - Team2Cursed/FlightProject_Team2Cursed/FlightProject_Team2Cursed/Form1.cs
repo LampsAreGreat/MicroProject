@@ -47,5 +47,17 @@ namespace FlightProject_Team2Cursed
             Form form1 = new AllRoutes();
             form1.Show();
         }
+
+        private void CrewBtn1_Click(object sender, EventArgs e)
+        {
+            Form form1 = new Crew();
+            form1.Show();
+        }
+
+        private void flightNumBtn1_Click(object sender, EventArgs e)
+        {
+            Form form1 = new DepartAndArrival();
+            form1.Show();
+        }
     }
 }
