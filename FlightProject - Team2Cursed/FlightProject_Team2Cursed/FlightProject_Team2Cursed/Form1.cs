@@ -41,5 +41,11 @@ namespace FlightProject_Team2Cursed
             Form form1 = new AllPlanes();
             form1.Show();
         }
+
+        private void RoutesBtn1_Click(object sender, EventArgs e)
+        {
+            Form form1 = new AllRoutes();
+            form1.Show();
+        }
     }
 }

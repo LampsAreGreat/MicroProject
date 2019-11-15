@@ -188,6 +188,7 @@
             this.RoutesBtn1.TabIndex = 4;
             this.RoutesBtn1.Text = "View All Routes (City Name)";
             this.RoutesBtn1.UseVisualStyleBackColor = false;
+            this.RoutesBtn1.Click += new System.EventHandler(this.RoutesBtn1_Click);
             // 
             // LogBtn1
             // 
