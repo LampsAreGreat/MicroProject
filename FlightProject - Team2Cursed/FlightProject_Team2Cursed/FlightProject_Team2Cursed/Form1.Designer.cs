@@ -160,6 +160,7 @@
             this.FlightBtn1.TabIndex = 2;
             this.FlightBtn1.Text = "View All Flights";
             this.FlightBtn1.UseVisualStyleBackColor = false;
+            this.FlightBtn1.Click += new System.EventHandler(this.FlightBtn1_Click);
             // 
             // AirplaneBtn1
             // 
@@ -173,6 +174,7 @@
             this.AirplaneBtn1.TabIndex = 3;
             this.AirplaneBtn1.Text = "View All Airplanes";
             this.AirplaneBtn1.UseVisualStyleBackColor = false;
+            this.AirplaneBtn1.Click += new System.EventHandler(this.AirplaneBtn1_Click);
             // 
             // RoutesBtn1
             // 

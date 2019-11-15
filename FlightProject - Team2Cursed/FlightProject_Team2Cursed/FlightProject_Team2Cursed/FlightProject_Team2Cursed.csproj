@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IBM.Data.DB2.iSeries">
+      <HintPath>C:\Users\Tony\source\repos\MicroProject\FlightProject - Team2Cursed\IBM.Data.DB2.iSeries.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

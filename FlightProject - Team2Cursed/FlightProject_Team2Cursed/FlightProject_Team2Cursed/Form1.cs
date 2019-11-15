@@ -29,5 +29,17 @@ namespace FlightProject_Team2Cursed
         {
 
         }
+
+        private void FlightBtn1_Click(object sender, EventArgs e)
+        {
+            Form form1 = new AllFlights();
+            form1.Show();
+        }
+
+        private void AirplaneBtn1_Click(object sender, EventArgs e)
+        {
+            Form form1 = new AllPlanes();
+            form1.Show();
+        }
     }
 }
