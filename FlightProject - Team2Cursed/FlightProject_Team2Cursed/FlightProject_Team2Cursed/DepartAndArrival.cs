@@ -18,18 +18,13 @@ namespace FlightProject_Team2Cursed
         iDB2DataReader dataReader;
         String SQL;
         SortedDictionary<String, String> arcodes;
-
         public DepartAndArrival()
         {
             InitializeComponent();
             loadARCodes();
 
-
         }
-
-
-
-        private void loadARCodes()
+        public void loadARCodes()
         {
             try
             {
@@ -55,9 +50,10 @@ namespace FlightProject_Team2Cursed
 
         private void SubmitBtn_Click(object sender, EventArgs e)
         {
-            if (AnDText.Text != null && AnDText.Text.Length > 0) {
+            if (AnDText.Text.Length > 0 && AnDText.Text != null)
+            {
                 AnDBox.Items.Clear();
-                AnDBox.Items.Add("Info for Flight#" + AnDText.Text);
+                AnDBox.Items.Add("FLIGHTS");
                 try
                 {
                     SQL = "select f.FTRTID, r.rtardepart,r.rtararrivl,f.flightno  from flight2019.flight f inner join flight2019.route r on f.FTRTID = r.RTID where f.FLIGHTNO='";
@@ -83,10 +79,10 @@ namespace FlightProject_Team2Cursed
                     }
                     connection.Close();
                 }
-            catch (Exception ex)
-            {
-                AnDBox.Items.Add(ex.Message);
-            }
+                catch (Exception ex)
+                {
+                    AnDBox.Items.Add(ex.Message);
+                }
             }
         }
     }

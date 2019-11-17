@@ -18,7 +18,6 @@ namespace FlightProject_Team2Cursed
         iDB2DataReader dataReader;
         String SQL;
         SortedDictionary<String, String> arcodes;
-
         public AllRoutes()
         {
             InitializeComponent();
@@ -53,7 +52,7 @@ namespace FlightProject_Team2Cursed
                 RouteBox.Items.Add(ex.Message);
             }
         }
-        private void loadARCodes()
+        public void loadARCodes()
         {
             try
             {
@@ -76,6 +75,5 @@ namespace FlightProject_Team2Cursed
                 RouteBox.Items.Add(ex.Message);
             }
         }
-
     }
 }

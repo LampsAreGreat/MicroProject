@@ -20,35 +20,41 @@ namespace FlightProject_Team2Cursed
         public Crew()
         {
             InitializeComponent();
+        }
 
-            CrewBox.Items.Clear();
-            CrewBox.Items.Add("CREW FOR FLIGHT: " + CrewText.Text);
-            try
+        private void SubmitBtn2_Click(object sender, EventArgs e)
+        {
+            if(CrewText.Text != null && CrewText.Text.Length > 0)
             {
-                SQL = "select f.flightno, c.pilots,c.attendants,c.resclerk,c.maint,c.janitor,c.refueling  from flight2019.flight f inner join flight2019.crew c on f.flightno = c.flightno where f.FLIGHTNO='";
-
-                SQL += CrewText.Text + "'";
-                connection = new iDB2Connection("datasource=deathstar.gtc.edu");
-                command = new iDB2Command(SQL, connection);
-
-
-                connection.Open();
-
-                dataReader = command.ExecuteReader();
-                while (dataReader.Read())
+                CrewBox.Items.Clear();
+                CrewBox.Items.Add("CREW FOR FLIGHT: " + CrewText.Text);
+                try
                 {
-                    CrewBox.Items.Add("Pilots: " + dataReader.GetString(1));
-                    CrewBox.Items.Add("Attendants: " + dataReader.GetString(2));
-                    CrewBox.Items.Add("ResClerks: " + dataReader.GetString(3));
-                    CrewBox.Items.Add("Maint: " + dataReader.GetString(4));
-                    CrewBox.Items.Add("Janitor: " + dataReader.GetString(5));
-                    CrewBox.Items.Add("Refueling: " + dataReader.GetString(6));
+                    SQL = "select f.flightno, c.pilots,c.attendants,c.resclerk,c.maint,c.janitor,c.refueling  from flight2019.flight f inner join flight2019.crew c on f.flightno = c.flightno where f.FLIGHTNO='";
+
+                    SQL += CrewText.Text + "'";
+                    connection = new iDB2Connection("datasource=deathstar.gtc.edu");
+                    command = new iDB2Command(SQL, connection);
+
+
+                    connection.Open();
+
+                    dataReader = command.ExecuteReader();
+                    while (dataReader.Read())
+                    {
+                        CrewBox.Items.Add("Pilots: " + dataReader.GetString(1));
+                        CrewBox.Items.Add("Attendants: " + dataReader.GetString(2));
+                        CrewBox.Items.Add("ResClerks: " + dataReader.GetString(3));
+                        CrewBox.Items.Add("Maint: " + dataReader.GetString(4));
+                        CrewBox.Items.Add("Janitor: " + dataReader.GetString(5));
+                        CrewBox.Items.Add("Refueling: " + dataReader.GetString(6));
+                    }
+                    connection.Close();
                 }
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                CrewBox.Items.Add(ex.Message);
+                catch (Exception ex)
+                {
+                    CrewBox.Items.Add(ex.Message);
+                }
             }
         }
     }

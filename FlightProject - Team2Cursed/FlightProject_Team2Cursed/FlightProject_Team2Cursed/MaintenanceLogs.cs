@@ -17,25 +17,30 @@ namespace FlightProject_Team2Cursed
         iDB2Command command;
         iDB2DataReader dataReader;
         String SQL;
-
         public MaintenanceLogs()
         {
             InitializeComponent();
 
             LogBox.Items.Clear();
-            LogBox.Items.Add("Maintanence Logs");
-            
+            LogBox.Items.Add("Maint Logs");
             try
             {
-                SQL = "select * from flight2019.maintanence";
+                SQL = "select * from flight2019.MaintLog";
                 connection = new iDB2Connection("datasource=deathstar.gtc.edu");
                 command = new iDB2Command(SQL, connection);
+
+
                 connection.Open();
 
                 dataReader = command.ExecuteReader();
                 while (dataReader.Read())
                 {
-                    LogBox.Items.Add(dataReader.GetString(0) + ", " + dataReader.GetString(1));
+                    LogBox.Items.Add("Log#: " + dataReader.GetString(1));
+                    LogBox.Items.Add("Plane#: " + dataReader.GetString(2));
+                    LogBox.Items.Add("TaskID: " + dataReader.GetString(3));
+                    LogBox.Items.Add("Maint Start Date: " + dataReader.GetString(4));
+                    LogBox.Items.Add("Maint End Date: " + dataReader.GetString(5));
+                    LogBox.Items.Add("Status: " + dataReader.GetString(6));
 
                 }
                 connection.Close();
