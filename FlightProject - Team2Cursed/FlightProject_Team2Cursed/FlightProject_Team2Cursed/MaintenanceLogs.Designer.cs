@@ -157,6 +157,7 @@
             this.BackBtn.TabIndex = 18;
             this.BackBtn.Text = "Back to Main Menu";
             this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // ExitBtn
             // 
@@ -170,6 +171,7 @@
             this.ExitBtn.TabIndex = 19;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // MaintenanceLogs
             // 

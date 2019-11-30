@@ -50,5 +50,16 @@ namespace FlightProject_Team2Cursed
                 LogBox.Items.Add(ex.Message);
             }
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new MainForm();
+            mainMenu.Show();
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

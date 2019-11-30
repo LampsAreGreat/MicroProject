@@ -57,5 +57,22 @@ namespace FlightProject_Team2Cursed
                 }
             }
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new MainForm();
+            mainMenu.Show();
+        }
+
+        private void BackMenu1_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new MainForm();
+            mainMenu.Show();
+        }
     }
 }

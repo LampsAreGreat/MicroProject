@@ -87,6 +87,7 @@
             this.FlightsMenu.Name = "FlightsMenu";
             this.FlightsMenu.Size = new System.Drawing.Size(342, 22);
             this.FlightsMenu.Text = "View All Flights";
+            this.FlightsMenu.Click += new System.EventHandler(this.FlightsMenu_Click);
             // 
             // AirplanesMenu
             // 
@@ -125,6 +126,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // ExitBtn
             // 
@@ -138,6 +140,7 @@
             this.ExitBtn.TabIndex = 10;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // AirportBox
             // 
@@ -159,6 +162,7 @@
             this.BackBtn.TabIndex = 12;
             this.BackBtn.Text = "Back to Main Menu";
             this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // label1
             // 

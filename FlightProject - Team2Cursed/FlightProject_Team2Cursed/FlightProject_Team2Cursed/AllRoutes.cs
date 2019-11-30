@@ -75,5 +75,22 @@ namespace FlightProject_Team2Cursed
                 RouteBox.Items.Add(ex.Message);
             }
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new MainForm();
+            mainMenu.Show();
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BackMenu1_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new MainForm();
+            mainMenu.Show();
+        }
     }
 }

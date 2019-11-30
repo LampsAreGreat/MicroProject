@@ -1,0 +1,11 @@
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.csprojAssemblyReference.cache
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.AllAirports.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.AllFlights.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.AllPlanes.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.AllRoutes.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.DepartAndArrival.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.Crew.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.MainForm.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.MaintenanceLogs.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.Properties.Resources.resources
+C:\Users\sketc\Documents\!School\C#\MicroProject-master\FlightProject - Team2Cursed\FlightProject_Team2Cursed\FlightProject_Team2Cursed\obj\Debug\FlightProject_Team2Cursed.csproj.GenerateResource.cache

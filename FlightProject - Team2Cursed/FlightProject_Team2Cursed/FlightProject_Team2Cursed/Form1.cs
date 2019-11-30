@@ -22,12 +22,14 @@ namespace FlightProject_Team2Cursed
 
         private void viewAllAirplanesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var menu = new AllAirports();
+            menu.Show();
         }
 
         private void allRoutesbyCityNameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var menu = new AllRoutes();
+            menu.Show();
         }
 
         private void FlightBtn1_Click(object sender, EventArgs e)
@@ -64,6 +66,52 @@ namespace FlightProject_Team2Cursed
         {
             Form form1 = new MaintenanceLogs();
             form1.Show();
+        }
+
+        private void AirportBtn1_Click(object sender, EventArgs e)
+        {
+            var menu = new AllAirports();
+            menu.Show();
+        }
+
+        private void AirportsMenu_Click(object sender, EventArgs e)
+        {
+            var menu = new AllAirports();
+            menu.Show();
+        }
+
+        private void FlightsMenu_Click(object sender, EventArgs e)
+        {
+            var menu = new AllFlights();
+            menu.Show();
+        }
+
+        private void LogsMenu_Click(object sender, EventArgs e)
+        {
+            var menu = new MaintenanceLogs();
+            menu.Show();
+        }
+
+        private void ArrialDepartureMenu_Click(object sender, EventArgs e)
+        {
+            var menu = new DepartAndArrival();
+            menu.Show();
+        }
+
+        private void CrewMenu_Click(object sender, EventArgs e)
+        {
+            var menu = new Crew();
+            menu.Show();
+        }
+
+        private void ExitMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

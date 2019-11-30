@@ -88,12 +88,14 @@
             this.AirportsMenu.Name = "AirportsMenu";
             this.AirportsMenu.Size = new System.Drawing.Size(342, 22);
             this.AirportsMenu.Text = "View All Airports";
+            this.AirportsMenu.Click += new System.EventHandler(this.AirportsMenu_Click);
             // 
             // FlightsMenu
             // 
             this.FlightsMenu.Name = "FlightsMenu";
             this.FlightsMenu.Size = new System.Drawing.Size(342, 22);
             this.FlightsMenu.Text = "View All Flights";
+            this.FlightsMenu.Click += new System.EventHandler(this.FlightsMenu_Click);
             // 
             // AirplanesMenu
             // 
@@ -114,18 +116,21 @@
             this.LogsMenu.Name = "LogsMenu";
             this.LogsMenu.Size = new System.Drawing.Size(342, 22);
             this.LogsMenu.Text = "View Maintenance Logs";
+            this.LogsMenu.Click += new System.EventHandler(this.LogsMenu_Click);
             // 
             // ArrialDepartureMenu
             // 
             this.ArrialDepartureMenu.Name = "ArrialDepartureMenu";
             this.ArrialDepartureMenu.Size = new System.Drawing.Size(342, 22);
             this.ArrialDepartureMenu.Text = "Seach Arrial and Departure Cities by Flight#";
+            this.ArrialDepartureMenu.Click += new System.EventHandler(this.ArrialDepartureMenu_Click);
             // 
             // CrewMenu
             // 
             this.CrewMenu.Name = "CrewMenu";
             this.CrewMenu.Size = new System.Drawing.Size(342, 22);
             this.CrewMenu.Text = "Search Crew by Flight#";
+            this.CrewMenu.Click += new System.EventHandler(this.CrewMenu_Click);
             // 
             // ExitMenu
             // 
@@ -134,6 +139,7 @@
             this.ExitMenu.Name = "ExitMenu";
             this.ExitMenu.Size = new System.Drawing.Size(43, 20);
             this.ExitMenu.Text = "Exit";
+            this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
             // 
             // AirportBtn1
             // 
@@ -147,6 +153,7 @@
             this.AirportBtn1.TabIndex = 1;
             this.AirportBtn1.Text = "View All Airports";
             this.AirportBtn1.UseVisualStyleBackColor = false;
+            this.AirportBtn1.Click += new System.EventHandler(this.AirportBtn1_Click);
             // 
             // FlightBtn1
             // 
@@ -244,6 +251,7 @@
             this.ExitBtn.TabIndex = 9;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // MainForm
             // 
